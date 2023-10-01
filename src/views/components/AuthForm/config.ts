@@ -31,7 +31,7 @@ export const templatePropsConfig: Record<AuthFormIs, AuthFormTemplateProps> = {
         ]
     },
     register: {
-        title: 'Вход',
+        title: 'Регистрация',
         fields: [
             {
                 label: 'Почта',
@@ -90,7 +90,7 @@ export const templatePropsConfig: Record<AuthFormIs, AuthFormTemplateProps> = {
             },
             {
                 content: 'Уже есть аккаунт?',
-                href: '/register'
+                href: '/login'
             },
         ]
     }

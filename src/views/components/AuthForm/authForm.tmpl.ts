@@ -30,9 +30,9 @@ export const template = `
                     {{/ifeq}}
                     
                     {{#ifnoteq this.type "submit"}}
-                        <button class="msg-button wide is-primary style-text">
+                        <a href="{{ this.href }}" class="msg-button wide is-primary style-text">
                             {{ this.content }}
-                        </button>
+                        </a>
                     {{/ifnoteq}}        
                 {{/each}}
             </div>
