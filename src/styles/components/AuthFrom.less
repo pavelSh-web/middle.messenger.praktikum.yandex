@@ -1,0 +1,71 @@
+.auth-form {
+    &-wrapper {
+        padding: 30px;
+        background: @white;
+        border-radius: 12px;
+        font-weight: 500;
+
+        min-width: 340px;
+    }
+
+    &__title {
+        padding: 20px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    &__field {
+        display: block;
+        cursor: text;
+
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+
+        .auth-form__input,
+        .auth-form__input {
+            display: block;
+        }
+
+        .auth-form__label {
+            font-size: 14px;
+            color: @shade-dark-50;
+            padding-bottom: 10px;
+            user-select: none;
+        }
+
+        &:focus-within {
+            .auth-form__label {
+                color: @primary;
+            }
+        }
+
+        .auth-form__input {
+            padding: 7px 0;
+            width: 100%;
+            transition: all 0.2s ease;
+
+            border-bottom: 1px solid fade(@primary, 60%);
+
+            &:focus {
+                border-color: @primary;
+                box-shadow: 0 5px 4px -4px fade(@primary, 50%);
+            }
+        }
+    }
+
+    &__buttons {
+        & > .msg-button:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__fields,
+    &__buttons {
+        padding-top: 20px;
+
+        &:not(:last-child) {
+            padding-bottom: 20px;
+        }
+    }
+}

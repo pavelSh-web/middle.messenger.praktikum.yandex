@@ -1,0 +1,63 @@
+.button-color (@class, @color) {
+    @selector: ~'@{class}';
+
+    .msg-button {
+        &@{selector} {
+            @hoverColor: darken(@color, 5%);
+
+            background: @color;
+            color: contrast(@color, @dark, @white);
+
+            &:hover {
+                background: @hoverColor;
+                color: contrast(@hoverColor, @dark, @white);
+            }
+
+            &.style-text {
+                background: transparent !important;
+                color: @color;
+
+                &:hover {
+                    color: @hoverColor;
+                }
+            }
+        }
+    }
+}
+
+.msg-button {
+    --paddingX: 16px;
+    --paddingY: 12px;
+
+    transition: all 0.2s ease;
+    padding: var(--paddingY) var(--paddingX);
+    position: relative;
+    justify-content: center;
+    display: inline-flex;
+    cursor: pointer;
+    vertical-align: middle;
+    align-items: center;
+    user-select: none;
+    z-index: 1;
+    appearance: none;
+    text-decoration: none;
+    border: none;
+    border-radius: @buttonRadius;
+
+    &.wide {
+        width: 100%;
+    }
+
+    &.round {
+        border-radius: 100px;
+    }
+
+    &.small {
+        --paddingX: 6px;
+        --paddingY: 10px;
+    }
+}
+
+.button-color('.is-primary', @primary);
+.button-color('.is-dark', @dark);
+.button-color('.is-light', @white);
