@@ -41,7 +41,7 @@ export const template = `
                     </div>
                 </div>
                 <div class="chat-view-dialog__message chat-view-dialog__message_sent">
-                    <img class="chat-view-dialog__message-image" src="/static/images/content/test-img.jpeg" alt="image">
+                    <img class="chat-view-dialog__message-image" src="https://images.unsplash.com/photo-1610809027249-86c649feacd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80" alt="image">
                     <div class="chat-view-dialog__message-content">
                         Вот такие горы вчера сфорткал!)
                     </div>
@@ -52,7 +52,7 @@ export const template = `
                 </div>
 
                 <div class="chat-view-dialog__message chat-view-dialog__message_sent">
-                    <img class="chat-view-dialog__message-image" src="/static/images/content/test-img2.jpeg" alt="image">
+                    <img class="chat-view-dialog__message-image" src="https://images.unsplash.com/photo-1610809027249-86c649feacd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80" alt="image">
                     <div class="chat-view-dialog__message-info">
                         <img src="/static/images/icons/unread-arrows.svg" alt="+">
                         <span>13:37</span>
