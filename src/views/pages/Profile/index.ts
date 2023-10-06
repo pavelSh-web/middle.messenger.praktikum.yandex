@@ -3,8 +3,11 @@ import Handlebars from 'handlebars';
 import { template } from './profile.tmpl.ts';
 
 export const Profile = () => {
+    const urlParams = new URLSearchParams(window.location.search);
+
     return Handlebars.compile(template)({
-        inEdit: true,
+        // NOTE: временное решение для первого спринта
+        inEdit: urlParams.get('in_edit') === 'true',
         name: 'Павел',
         imageSrc: 'https://avatars.dicebear.com/api/initials/P.svg',
         fields: [
