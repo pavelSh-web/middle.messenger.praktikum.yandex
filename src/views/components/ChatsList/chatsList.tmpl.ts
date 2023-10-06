@@ -4,7 +4,7 @@ export const template = `
     <div class="chats-list">
         <div class="chats-list-header">
             <div class="chats-list-header__actions">
-                <button class="chats-list__profile-button msg-button style-text is-light-dark opacity">Профиль</button>
+                <a href="/profile" class="chats-list__profile-button msg-button style-text is-light-dark opacity">Профиль</a>
             </div>
             
             <input class="chats-list-header__input msg-input" type="text" placeholder="Поиск" />
