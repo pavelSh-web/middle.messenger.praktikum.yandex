@@ -9,6 +9,7 @@ import { ChatView } from '../../components/ChatView';
 export const Main = () => {
     return Handlebars.compile(template)({
         chatsList: ChatsList({
+            // @ts-ignore
             list: testChatsList
         }),
         chatView: ChatView({})
