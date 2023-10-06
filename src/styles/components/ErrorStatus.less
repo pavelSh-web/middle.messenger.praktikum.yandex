@@ -1,0 +1,33 @@
+.error-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__status-container {
+        position: relative;
+        height: 160px;
+        min-width: 430px;
+    }
+
+    &__status {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 160px;
+        color: @white;
+    }
+
+    &__message {
+        margin-top: 20px;
+        font-size: 20px;
+        color: @shade-dark-70;
+        font-weight: 300;
+    }
+
+    &__link {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+}

@@ -56,8 +56,22 @@
         --paddingX: 6px;
         --paddingY: 10px;
     }
+
+    &.collapse {
+        --paddingX: 0;
+        --paddingY: 0;
+    }
+
+    &.opacity {
+        background: none;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
 }
 
 .button-color('.is-primary', @primary);
 .button-color('.is-dark', @dark);
+.button-color('.is-light-dark', @shade-dark-40);
 .button-color('.is-light', @white);

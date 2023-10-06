@@ -1,0 +1,35 @@
+.stroked-title {
+    --color: @primary;
+
+    &_red {
+        --color: @red;
+    }
+
+    &_gray {
+        --color: @shade-dark-50;
+    }
+
+    &_light-gray {
+        --color: @shade-dark-20;
+    }
+
+    transition: all 0.2s ease;
+    text-shadow: 1px 0 var(--color), -1px 0 var(--color), 0 1px var(--color), 0 1px var(--color),
+    1px 1px var(--color), -1px -1px var(--color), 1px -1px var(--color), -1px 1px var(--color);
+
+    &.filled {
+        text-shadow: 0 0 transparent;
+        color: var(--color);
+    }
+
+    &.hovering:hover {
+        color: var(--color);
+        text-shadow: 0 0 transparent;
+
+        &.filled {
+            color: var(--ck-colors-black);
+            text-shadow: 1px 0 var(--color), -1px 0 var(--color), 0 1px var(--color), 0 1px var(--color),
+            1px 1px var(--color), -1px -1px var(--color), 1px -1px var(--color), -1px 1px var(--color);
+        }
+    }
+}
