@@ -27,7 +27,7 @@ export const template = `
                         А также стремящиеся вытеснить традиционное производство, нанотехнологии являются только методом политического участия и функционально разнесены на независимые элементы! Ясность нашей позиции очевидна: консультация с широким активом требует от нас анализа анализа существующих паттернов поведения! 
                     </div>
                     <div class="chat-view-dialog__message-info">
-                        <img src="/static/images/icons/readed-arrows.svg" alt="+">
+                        <img src="/static/images/icons/readed-arrows.svg" alt="readed">
                         <span>13:35</span>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ export const template = `
                         Современные технологии достигли такого уровня, что высококачественный прототип будущего проекта говорит о возможностях инновационных методов управления процессами.
                     </div>
                     <div class="chat-view-dialog__message-info">
-                        <img src="/static/images/icons/unread-arrows.svg" alt="+">
+                        <img src="/static/images/icons/unread-arrows.svg" alt="unreaded">
                         <span>13:37</span>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ export const template = `
                         Вот такие горы вчера сфорткал!)
                     </div>
                     <div class="chat-view-dialog__message-info">
-                        <img src="/static/images/icons/unread-arrows.svg" alt="+">
+                        <img src="/static/images/icons/unread-arrows.svg" alt="unreaded">
                         <span>13:37</span>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ export const template = `
                 <div class="chat-view-dialog__message chat-view-dialog__message_sent">
                     <img class="chat-view-dialog__message-image" src="https://images.unsplash.com/photo-1610809027249-86c649feacd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80" alt="image">
                     <div class="chat-view-dialog__message-info">
-                        <img src="/static/images/icons/unread-arrows.svg" alt="+">
+                        <img src="/static/images/icons/unread-arrows.svg" alt="unreaded">
                         <span>13:37</span>
                     </div>
                 </div>
