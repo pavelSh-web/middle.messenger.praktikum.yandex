@@ -49,14 +49,14 @@ export const templatePropsConfig: Record<AuthFormIs, AuthFormTemplateProps> = {
             },
             {
                 label: 'Имя',
-                name: 'firstname',
+                name: 'first_name',
                 id: 'firstname',
                 type: 'text',
                 placeholder: 'Введите имя',
             },
             {
                 label: 'Фамилия',
-                name: 'lastname',
+                name: 'last_name',
                 id: 'lastname',
                 type: 'text',
                 placeholder: 'Введите фамилию',

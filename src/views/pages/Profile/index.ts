@@ -13,23 +13,33 @@ export const Profile = () => {
         fields: [
             {
                 title: 'Почта',
-                content: 'pochta@yandex.ru'
+                content: 'pochta@yandex.ru',
+                name: 'email',
+                type: 'email'
             },
             {
                 title: 'Логин',
-                content: 'ivanivanov'
+                content: 'ivanivanov',
+                name: 'login',
+                type: 'text'
             },
             {
                 title: 'Имя',
-                content: 'Павел'
+                content: 'Павел',
+                name: 'first_name',
+                type: 'text'
             },
             {
                 title: 'Фамилия',
-                content: 'Шорохов'
+                content: 'Шорохов',
+                name: 'last_name',
+                type: 'text'
             },
             {
                 title: 'Телефон',
-                content: '+7 (909) 967 30 30'
+                content: '+7 (909) 967 30 30',
+                name: 'phone',
+                type: 'tel'
             }
         ],
         actions: [

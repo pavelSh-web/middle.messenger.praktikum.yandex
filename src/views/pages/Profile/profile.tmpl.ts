@@ -8,7 +8,11 @@ export const template = `
                     {{#each fields}}
                         <li class="profile-field msg-list__item">
                             <label class="profile-field__title">{{ this.title }}</label>
-                            <input class="profile-field__content msg-input" value="{{ this.content }}">
+                            <input class="profile-field__content msg-input"
+                                   value="{{ this.content }}"
+                                   name="{{ this.name }}"
+                                   type="{{ this.type }}"
+                            >
                         </li>  
                     {{/each}}
                 </ul>
