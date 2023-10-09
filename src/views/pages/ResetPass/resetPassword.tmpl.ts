@@ -26,7 +26,7 @@ export const template = `
                             <input id="password" 
                                    class="base-form__input"
                                    placeholder="{{ this.repeatPasswordPlaceholder }}"
-                                   name="password"
+                                   name="repeat_password"
                                    type="password"
                             />
                         </label>

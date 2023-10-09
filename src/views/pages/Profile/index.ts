@@ -30,9 +30,15 @@ export const Profile = () => {
                 type: 'text'
             },
             {
+                title: 'Никнейм',
+                content: 'Павел',
+                name: 'display_name',
+                type: 'text'
+            },
+            {
                 title: 'Фамилия',
                 content: 'Шорохов',
-                name: 'last_name',
+                name: 'second_name',
                 type: 'text'
             },
             {

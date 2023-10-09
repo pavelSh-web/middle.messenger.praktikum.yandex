@@ -65,10 +65,12 @@ export const template = `
             <button class="msg-button style-text opacity collapse">
                 <img src="/static/images/icons/attach.svg" alt="+">
             </button>
-            <input class="msg-input rounded" />
-            <button class="msg-button is-primary opacity collapse">
-                <img src="/static/images/icons/send-arrow.svg" alt="->">
-            </button>
+            <form>
+                <input class="msg-input rounded" name="message" />
+                <button class="msg-button is-primary opacity collapse" type="submit">
+                    <img src="/static/images/icons/send-arrow.svg" alt="->">
+                </button>
+            </form>
         </div>
     </div>
 `;
