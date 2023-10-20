@@ -1,0 +1,99 @@
+.base-form {
+    &-wrapper {
+        padding: 30px;
+        background: @white;
+        border-radius: 12px;
+        font-weight: 500;
+        box-shadow: 0 0 6px @shade-dark-20;
+
+        min-width: 340px;
+    }
+
+    &__title {
+        padding: 20px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    &__field {
+        display: block;
+        cursor: text;
+
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+
+        .base-form__label,
+        .base-form__input {
+            display: block;
+        }
+
+        .base-form__label {
+            color: @shade-dark-70;
+            padding-bottom: 5px;
+            user-select: none;
+            transition: color 0.1s ease;
+        }
+
+        &:hover:not(:focus-within) {
+            .base-form__label {
+                color: fade(@primary, 80%);
+            }
+        }
+
+        &:focus-within {
+            .base-form__label {
+                color: @primary;
+            }
+        }
+
+        .base-form__input {
+            padding: 7px 0;
+            width: 100%;
+            transition: all 0.2s ease;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid fade(@primary, 60%);
+
+            &[type="password"] {
+                color: @primary;
+
+                &[value] {
+                    font-size: 20px;
+                }
+            }
+
+            &::placeholder {
+                color: @shade-dark-30;
+            }
+
+            &:hover {
+                border-color: @primary;
+            }
+
+            &:focus {
+                border-color: @primary;
+                box-shadow: 0 5px 4px -4px fade(@primary, 50%);
+            }
+
+            &:invalid {
+                color: @red;
+            }
+        }
+    }
+
+    &__buttons {
+        & > .msg-button:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__fields,
+    &__buttons {
+        padding-top: 20px;
+
+        &:not(:last-child) {
+            padding-bottom: 20px;
+        }
+    }
+}
